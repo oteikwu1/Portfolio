@@ -12,6 +12,8 @@
     --text-color: #0F172A;
     --hero-bg-color: #ffffff;
     --shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.14);
+    --tool-section-bg-color: #F8F9FC;
+    --tool-section-icon-color: #EFEBFF;
 }
 
 body {
@@ -140,6 +142,12 @@ body {
     line-height: 1.4;
 }
 
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
 .view-work {
     padding: 12px 24px;
     font-size: 1em;
@@ -150,7 +158,7 @@ body {
 
 .chat-btn {
     border: 2px solid var(--primary-color);
-    padding: 12px 24px;
+    padding: 12px 22px;
     font-size: 1em;
     font-family: var(--main-font);
     font-weight: 500;
@@ -224,4 +232,62 @@ body {
     color: var(--text-color);
     font-family: var(--main-font);
     margin: 6px 0;
+}
+
+.tools-section {
+    background-color: var(--tool-section-bg-color);
+    margin: 40px 80px;
+    padding: 40px 0;
+}
+
+.tools-section-text {
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--main-font);
+    font-size: 2.4em;
+    margin-bottom: 40px;
+}
+
+.tools-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 80px; 
+}
+
+.tech-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 230px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid var(--text-color);
+    border-radius: 8px;
+    font-family: var(--main-font);
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--tool-section-icon-color);
+    border-radius: 6px;
+}
+
+
+.card-content h2 {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+    letter-spacing: -0.5px;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-color);
 }
