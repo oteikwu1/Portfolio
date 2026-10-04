@@ -163,40 +163,45 @@ nav-links ul a:active,
 
 
 .project-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
+    font-family: var(--main-font, sans-serif);
 }
 
 .project-description {
     font-size: .8em;
-    color: #555;
-    line-height: 1.5;
+    color: var(--text-color);
+    line-height: 1.2;
     margin-bottom: 20px;
+    max-width: 300px;
+    margin: 8px auto;
+    text-align: center;
 }
 
 .project-tags {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
-    margin-bottom: 25px;
-    /* flex-wrap: wrap; */
+    margin: 6px auto;
 }
 
 .tag {
     background-color: #f1f0fb;
-    color: var(--primary-color, #4a3aff);
+    color: var(--primary-color, #c8c7d1);
     padding: 8px 16px;
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.95rem;
 }
 
-/* Links layout */
 .project-links {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    gap: 60px;
+    margin: 10px auto;
 }
 
 .project-links a {
