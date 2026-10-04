@@ -228,6 +228,11 @@ html {
     font-weight: 600;
 }
 
+.about-img img {
+    width: 100%;
+    max-width: 100%
+}
+
 .about-work {
     color: var(--text-color);
     font-size: 32px;
@@ -706,8 +711,8 @@ input[type="email"]:focus {
     
 body {
     width: 100%;
-    max-width: 100%;
-    padding: 0 16px;
+    max-width: 375px;
+    padding: 0;
     box-sizing: border-box;
     
 }
@@ -747,11 +752,16 @@ body {
     padding:  0;
     margin: 20px auto;
     box-shadow:none;
+    width: 100%;
 }
 
 .hero-content {
     width: 100%;
     text-align: center;
+}
+
+.hero-image {
+    margin: 0;
 }
 
 .hero-image img{
@@ -811,6 +821,7 @@ body {
     flex-direction:  column-reverse;
     margin: 0 auto;
     padding: 16px;
+    gap: 20px;
 }
 
 .about-me {
@@ -827,6 +838,40 @@ body {
     font-size: 16px;
     text-align: center;
     margin: 8px auto;
+}
+
+.year {
+    font-size: .9em;
+}
+
+.exp1 {
+    border: none;
+    padding: 0;
+}
+
+.year-content {
+    font-size: .8em;
+}
+
+.about-img img {
+    margin: 0 auto;
+    display: block;
+}
+
+.tools-section  {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.tools-section-text {
+    font-size: 24px;
+    margin: 20px;
+}
+
+
+.tools-container {
+    grid-template-columns: repeat(1, 1fr);
+  
 }
 
 }
