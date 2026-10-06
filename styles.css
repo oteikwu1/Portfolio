@@ -782,7 +782,7 @@ input[type="email"]:focus {
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
     body {
         width: 100%;
         max-width: 100%;
@@ -934,7 +934,9 @@ input[type="email"]:focus {
 
     .tools-container {
         grid-template-columns: repeat(1, 1fr);
-        margin: 0 20px;
+        margin: 0 auto;
+        justify-items: center;
+        align-items: center;
     }
 
     .tech-card {

@@ -42,10 +42,9 @@ body {
     gap: 2em;
 }
 
-.nav-links ul {
+.nav-links li {
     list-style: none;
-    padding: 0;
-    margin: 0;
+
 }
 
 .nav-links ul a {
@@ -61,10 +60,65 @@ body {
     }
 }
 
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu-btn {
+    border: none;
+}
+
+.close-icon,
+.dark-theme {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.close-btn,
+.change-bg-mode {
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-nav-links {
+    padding: 60px 0;
+}
+
+.mobile-nav-links li {
+    list-style: none;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.mobile-nav-links a {
+    font-family: var(--main-font);
+    color: var(--text-color);
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.mobile-panel {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--nav-bg-color, #ffffff);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.mobile-panel.active {
+    right: 0;
+}
+
 .mobile-nav {
     display: none;
 }
-
 html {
     scroll-behavior: smooth;
 }
@@ -224,4 +278,51 @@ nav-links ul a:active,
 
 .code-link:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 16px;
+        background-color: var(--nav-bg-color);
+        box-shadow: var(--shadow);
+    }
+
+    .mobile-nav img {
+        width: 100%;
+        max-width: 100px;
+    }
+
+    .mobile-menu img {
+        width: 24px;
+    }
+
+    .project-heading {
+        font-size: 1.4em;
+    }
+
+    .project-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+   .project-section {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 40px;
+            margin: 40px 0;
+    }
 }

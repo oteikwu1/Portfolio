@@ -32,5 +32,5 @@ closeMenu.addEventListener('click', () => {
   mobilePanel.classList.remove('active')
 })
 
-function 
+
 

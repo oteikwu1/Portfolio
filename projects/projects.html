@@ -8,48 +8,72 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <header>
-        <nav class="nav-bar">
-            <div class="nav-logo">
-                <a href="#">
-                    <img src="/assets/Logo.png" alt="logo image" title="logo image">
-                </a>
-            </div>
-    
-            <div class="nav-links">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li class="highlight-item"><a href="#Projects" class="projects-link">Projects</a></li>
-                    <li><a href="../index.html#About">About</a></li>
-                    <li><a href="../index.html#Process">Process</a></li>
-                    <li><a href="../index.html#Contact">Contact</a></li>
-                </ul>
-            </div>
-    
-            <div class="nav-buttons">
-                <button class="call-btn">
-                    <span>Book a Call</span>
-                    <span class="icon-wrap">
-                        <img src="/assets/arrow.png" alt="arrow icon" width="16">
-                    </span>
+<header>
+    <!-- Desktop Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-logo">
+            <a href="Home">
+                <img src="/assets/logo.png" alt="Company Logo" title="Company Logo">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li class="highlight-item"><a href="./projects/projects.html" class="projects-link">Projects</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Process">Process</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="call-btn" type="button">
+                <span>Book a Call</span>
+                <span class="icon-wrap">
+                    <img src="/assets/arrow.png" alt="" width="16">
+                </span>
+            </button>
+            <button class="change-bg-mode" id="theme-icon" aria-label="Toggle Theme" type="button">
+                <img id="theme-icon-desktop" src="/assets/dark.png" alt="Dark theme icon" width="26">
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <div class="mobile-logo">
+            <a href="#Home">
+                <img src="/assets/logo.png" alt="Company Logo">
+            </a>
+        </div>
+
+        <button class="mobile-menu-btn" id="open-menu" aria-label="Open Navigation Menu" type="button">
+            <img src="/assets/menu-icon.png" alt="Menu Icon">
+        </button>
+
+        <!-- Mobile Slide-out Panel -->
+        <div class="mobile-panel" id="mobile-panel">
+            <div class="panel-header">
+                <button class="close-btn" id="close-menu" aria-label="Close Navigation Menu" type="button">
+                    <img src="/assets/close-icon.png" alt="Close Icon" class="close-icon" width="30">
                 </button>
-                <button class="change-bg-mode">
-                    <img src="/assets/dark.png" alt="light icon" width="26">
+                <button class="change-bg-mode" id="theme-toggle-mobile" aria-label="Toggle Theme" type="button">
+                    <img id="theme-icon-mobile" src="/assets/dark.png" alt="Dark theme icon" class="dark-theme">
                 </button>
             </div>
-        </nav>
-        <!-- Mobile nav -->
-        <nav class="mobile-nav">
-            <div class="mobile-logo">
-                <a href="#Home">
-                    <img src="/assets/logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="mobile-menu">
-                <img src="/assets/menu-icon.png" alt="">
-            </div>
-        </nav>
-    </header>
+
+            <!-- Added navigation links for mobile view -->
+            <ul class="mobile-nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="./projects/projects.html">Projects</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Process">Process</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
     <main class="project-container">
         <h1 class="project-heading">
@@ -205,36 +229,37 @@
             </div>
         </div>
 
-          <!-- 
-         <div class="project-card">
-            <div class="project-image">
-                <img src="/assets/project1.png" alt="E-commerce Sales Campaigns Preview" width="167">
-            </div>
-        
-            <div class="project-content">
-                <h3 class="project-title">E-commerce Sales Campaigns</h3>
-                <p class="project-description">
-                    Promotional email designed to boost sales and drive more website traffics
-                </p>
-        
+            <div class="project-card">
+                <!-- Project Image Preview -->
+                <div class="project-image">
+                    <img src="/assets/project1.png" alt="E-commerce Sales Campaigns Preview" width="167">
+                </div>
             
-                <div class="project-tags">
-                    <span class="tag">Figma</span>
-                    <span class="tag">HTML/CSS</span>
-                    <span class="tag">Responsive</span>
-                </div>
-        
-                
-                <div class="project-links">
-                    <a href="#" class="live-link">View Live Link &rarr;</a>
-                    <a href="#" class="code-link">View Code</a>
+                <!-- Project Information -->
+                <div class="project-content">
+                    <h3 class="project-title">Product Launch Campaigns</h3>
+                    <p class="project-description">
+                        Promotional email designed to boost sales and drive more website traffics
+                    </p>
+            
+                    <!-- Tech Stack Tags -->
+                    <div class="project-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+            
+                    <!-- Action Links -->
+                    <div class="project-links">
+                        <a href="https://oteikwu1.github.io/product-launch/" class="live-link">View Live Link &rarr;</a>
+                        <a href="https://github.com/oteikwu1/product-launch" class="code-link">View Code</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-          -->
 
         </div>
     </main>
+
+    <script src="/projects/project.js"></script>
 </body>
 </html>"
