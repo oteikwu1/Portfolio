@@ -7,64 +7,74 @@
     <title>My Portfolio</title>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="nav-bar">
-            <div class="nav-logo">
-                <a href="#">
-                    <img src="/assets/Logo.png" alt="logo image"
-                     title="logo image">
-                </a>
-            </div>
 
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#Home">Home</a></li>
-                   <li class="highlight-item"><a href="./projects/projects.html"
-                     class="projects-link">Projects</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Process">Process</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="nav-buttons">
-                <button class="call-btn">
-                    <span>Book a Call</span>
-                    <span class="icon-wrap">
-                        <img src="/assets/arrow.png" alt="arrow icon" width="16">
-                    </span>
-                </button>
-                <button class="change-bg-mode" id="theme-icon">
-                    <img src="/assets/dark.png" alt="light icon" 
-                        width="26">
-                </button>
-            </div>
-        </nav>
-        <!-- Mobile nav -->
-        <nav class="mobile-nav">
-            <div class="mobile-logo">
-                <a href="#Home">
-                    <img src="/assets/logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="mobile-menu">
-                <img src="/assets/menu-icon.png" alt="">
-            </div>
-
-              <div class="mobile-panel">
-            <div class="close-icon">
-                <img src="/assets/close-icon.png" alt="Close Icon"
-                title="Close Icon">
-            </div>
-            <div class="dark-theme">
-                <img src="/assets/dark.png" alt="Sun Icon">
-            </div>
+<!-- Navigation Bar -->
+<header>
+    <!-- Desktop Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-logo">
+            <a href="Home">
+                <img src="/assets/logo.png" alt="Company Logo" title="Company Logo">
+            </a>
         </div>
-        </nav>
-      
-    </header>
 
+        <div class="nav-links">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li class="highlight-item"><a href="./projects/projects.html" class="projects-link">Projects</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Process">Process</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="call-btn" type="button">
+                <span>Book a Call</span>
+                <span class="icon-wrap">
+                    <img src="/assets/arrow.png" alt="" width="16">
+                </span>
+            </button>
+            <button class="change-bg-mode" id="theme-icon" aria-label="Toggle Theme" type="button">
+                <img id="theme-icon-desktop" src="/assets/dark.png" alt="Dark theme icon" width="26">
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <div class="mobile-logo">
+            <a href="#Home">
+                <img src="/assets/logo.png" alt="Company Logo">
+            </a>
+        </div>
+        
+        <button class="mobile-menu-btn" id="open-menu" aria-label="Open Navigation Menu" type="button">
+            <img src="/assets/menu-icon.png" alt="Menu Icon">
+        </button>
+
+        <!-- Mobile Slide-out Panel -->
+        <div class="mobile-panel" id="mobile-panel">
+            <div class="panel-header">
+                <button class="close-btn" id="close-menu" aria-label="Close Navigation Menu" type="button">
+                    <img src="/assets/close-icon.png" alt="Close Icon" class="close-icon" width="30">
+                </button>
+                <button class="change-bg-mode" id="theme-toggle-mobile" aria-label="Toggle Theme" type="button">
+                    <img id="theme-icon-mobile" src="/assets/dark.png" alt="Dark theme icon" width="24">
+                </button>
+            </div>
+
+            <!-- Added navigation links for mobile view -->
+            <ul class="mobile-nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="./projects/projects.html">Projects</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Process">Process</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
     <!-- Hero Section -->
      <section class="hero-section" id="Home">
         <div class="hero-content">

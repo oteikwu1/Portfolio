@@ -1,4 +1,7 @@
  const themeIcon = document.getElementById('theme-icon');
+ const openMenu = document.getElementById('open-menu');
+ const mobilePanel = document.getElementById('mobile-panel');
+ const closeMenu = document.getElementById('close-menu');
 
 function toggleTheme() {
     const body = document.body;
@@ -14,4 +17,13 @@ function toggleTheme() {
     }
 }
 
-themeIcon.addEventListener("click", toggleTheme)
+themeIcon.addEventListener("click", toggleTheme);
+
+openMenu.addEventListener("click", () => {
+  mobilePanel.classList.add('active')
+});
+
+closeMenu.addEventListener('click', () => {
+  mobilePanel.classList.remove('active')
+})
+
