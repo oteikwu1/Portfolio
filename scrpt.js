@@ -2,6 +2,11 @@
  const openMenu = document.getElementById('open-menu');
  const mobilePanel = document.getElementById('mobile-panel');
  const closeMenu = document.getElementById('close-menu');
+ const nameInput = document.getElementById('name-input');
+ const emailInput = document.getElementById('email-input');
+ const projectType = document.getElementById('project-type');
+ const textArea = document.querySelector('.text-area');
+ const submitButton = document.querySelector('.custom-button');
 
 function toggleTheme() {
     const body = document.body;
@@ -26,4 +31,6 @@ openMenu.addEventListener("click", () => {
 closeMenu.addEventListener('click', () => {
   mobilePanel.classList.remove('active')
 })
+
+function 
 

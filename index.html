@@ -370,21 +370,21 @@
             </div>
             <!-- Form Section -->
             <div class="contact-form-container">
-                <form action="">
+                <form action="https://formspree.io/f/xnpjnvoa" method="POST">
                     <div class="input-container">
                         <div class="input-field">
-                            <label for="names" class="form-label">Name</label>
+                            <label for="names" class="form-label" id="name-input">Name</label>
                             <input type="text" name="Name" id="names" placeholder="John Doe"> <br>
                         </div>
                         <div class="input-field">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label" id="email-input">Email</label>
                             <input type="email" name="email" id="email" placeholder="johnd@gmail.com" required>
                         </div>
                     </div>
     
                     <div class="dropdown-container">
                         <select id="project-type" name="projectType" class="custom-dropdown">
-                            <option value="" disabled selected>Select project type...</option>
+                            <option value="disabled selected">Select project type...</option>
                             <option value="email-template">Email template</option>
                             <option value="newsletter">Newsletter</option>
                             <option value="email-campaign">Email campaign</option>
