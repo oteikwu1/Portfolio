@@ -77,8 +77,36 @@ body.dark-mode {
     justify-content: space-between;
 }
 
-.close-icon {
-  width: 20px;
+.mobile-menu-btn {
+    border: none;
+}
+
+.close-icon, .dark-theme {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.close-btn, .change-bg-mode {
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-nav-links{
+    padding: 60px 0;
+}
+
+.mobile-nav-links li {
+    list-style: none; 
+    margin: 40px auto;
+    text-align: center;
+}
+
+.mobile-nav-links a {
+    font-family: var(--main-font);
+    color: var(--text-color);
+    font-size: 2em;
+    text-decoration: none;
 }
 
 .mobile-panel {
