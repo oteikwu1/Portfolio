@@ -34,8 +34,7 @@ body.dark-mode {
     --text-color: #f5f5f5f;
     --hero-bg-color: #0E1524;
     --tool-section-bg-color: #0E1524;
-     --bg-color: #0E1524;
-    
+     --bg-color: #0E1524;   
 }
 
 .nav-bar {
@@ -377,7 +376,7 @@ html {
     gap: 14px;
     max-width: 230px;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: var(--hero-bg-color);
     border: 2px solid var(--text-color);
     border-radius: 8px;
     font-family: var(--main-font);
