@@ -6,16 +6,19 @@
 
 :root {
     --bg-color: #F4F8FE;
-    --nav-bg-color: #f2f2f2;
+    --body-bg-color: #ffffff;
+    --nav-bg-color: #fff;
+    --button-color: #f2f2f2;
     --primary-color: #2563EB;
     --main-font: "Outfit", sans-serif;
     --text-color: #0F172A;
+    --nav-text-color: #3a3a3a;
     --hero-bg-color: #ffffff;
     --shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.14);
     --tool-section-bg-color: #F8F9FC;
     --tool-section-icon-color: #EFEBFF;
     --process-section-bg-color: #7242B51A;
-    --footer-bg-color: #0E1524;
+    --footer-bg-color: #0f0f1a;
     --dark-mode-bg-color: #3a3a3a;
     --dark-mode-text: #EFEBFF;
     --logo-bg-color: #f2f2f2;
@@ -26,16 +29,25 @@ html, body {
   max-width: 1440px;
   background-color: var(--bg-color);
   overflow-x: hidden;
+  background-color: var(--body-bg-color);
 }
 
 body.dark-mode {
-    background-color: var(--dark-mode-bg-color);
+    background-color: #1a1a2e;
     color: var(--dark-mode-text);
     --nav-bg-color: #0E1524;
     --text-color: #f5f5f5f;
-    --hero-bg-color: #0E1524;
+    --hero-bg-color: #16213e;
     --tool-section-bg-color: #0E1524;
-     --bg-color: #0E1524;   
+     --bg-color: #0E1524;  
+    --button-color: #f2f2f2;
+    --dark-mode-bg-color: #f2f2f2;
+     --hero-bg-color:#0E1524;
+    --text-color: #b8b8b8;
+    ----nav-text-color: #ffffff;
+    .mail-icon {
+        filter: invert(1) brightness(2);
+    }
 }
 
 .nav-bar {
@@ -108,8 +120,8 @@ body.dark-mode {
 }
 
 .mobile-panel {
-   position: fixed;
-   top: 0;
+  position: fixed;
+  top: 0;
   right: -100%; 
   width: 100%;
   height: 100vh;
@@ -177,7 +189,7 @@ html {
   border: none;
   border-radius: 8px;
   padding: 8px 24px;
-  color: var(--nav-bg-color);
+  color: var(--button-color);
   cursor: pointer;
   display: flex;
   gap: 8px;
@@ -202,9 +214,9 @@ html {
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    margin: 20px auto;
-    padding: 40px 40px;
-    width: 85%;
+    margin: 0 auto;
+    padding:  40px;
+    width: 88%;
     max-width: 1440px;
     background-color: var(--bg-color);
     box-shadow: var(--shadow);
@@ -282,6 +294,8 @@ html {
     gap: 10px;
     align-items: center;
     background-color: transparent;
+    color: var(--dark-mode-bg-color);
+    font-weight: 600;
     cursor: pointer;
     border-radius: 8px;
 }
@@ -297,7 +311,7 @@ html {
     justify-content: center;
     gap: 60px;
     background-color: var(--hero-bg-color);
-    margin: 40px 80px;
+    margin: 0 80px;
     padding: 80px 100px;
 }
 
@@ -356,7 +370,7 @@ html {
 
 .tools-section {
     background-color: var(--tool-section-bg-color);
-    margin: 40px 80px;
+    margin: 0 80px;
     padding: 40px 0;
 }
 
@@ -413,7 +427,7 @@ html {
 }
 
 .process-section {
-    margin: 40px 80px;
+    margin: 0 80px;
     background-color: var(--hero-bg-color);
     padding: 60px 20px;
 }
@@ -474,7 +488,7 @@ html {
 
 .contact-section {
     background-color: var(--hero-bg-color);
-    margin: 40PX 80PX;
+    margin: 0 80px;
     padding: 40px 0;
 }
 
@@ -722,7 +736,7 @@ input[type="email"]:focus {
 
 .footer {
     background-color: var(--footer-bg-color);
-    margin: 10px auto;
+    margin: 0 auto;
     padding: 40px 20px;
     max-width: 1440px;
     box-sizing: border-box;
@@ -752,7 +766,7 @@ input[type="email"]:focus {
 
 .footer-links ul a {
     text-decoration: none;
-    color: var(--nav-bg-color);
+    color: var(--nav-text-color);
     font-family: var(--main-font);
     font-size: 1em;
     font-weight: 500;
