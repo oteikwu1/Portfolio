@@ -18,6 +18,7 @@
     --footer-bg-color: #0E1524;
     --dark-mode-bg-color: #3a3a3a;
     --dark-mode-text: #EFEBFF;
+    --logo-bg-color: #f2f2f2;
 }
 
 html, body {
@@ -54,8 +55,7 @@ body.dark-mode {
 }
 
 .nav-links li {
-    list-style: none;
-   
+    list-style: none;  
 }
 
 .nav-links ul a {
@@ -161,6 +161,7 @@ html {
 .nav-logo img {
     width: 100%;
     max-width: 177px;
+    background-color: var(--logo-bg-color);
 }
 
 .nav-buttons {
@@ -190,6 +191,10 @@ html {
 .change-bg-mode {
     background-color: transparent;
     border: none;
+}
+
+#theme-icon >img {
+    width: 26px;
 }
 
 .hero-section {
